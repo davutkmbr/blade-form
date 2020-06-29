@@ -49,7 +49,7 @@ Select elementini kullanırken ekstradan bir slot daha kullanırız.
     @slot('label', 'Şehir')
     @slot('description', 'Sevdiğiniz şehirleri seçin')
     @slot('attributes', ['required' => true, 'multiple' => true])
-    @slot('options', ['01' => 'Adana', 34' => 'İstanbul'])
+    @slot('options', ['01' => 'Adana', '34' => 'İstanbul'])
     @slot('value', '01')
 @endcomponent
 ```
