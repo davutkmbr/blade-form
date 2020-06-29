@@ -23,7 +23,7 @@
 @endphp
 
 @if($label ?? null)
-    @component('components.form.label')
+    @component('form.label')
         @slot('id', $id)
         @slot('label', $label)
         @slot('description', $description ?? null)
@@ -37,7 +37,7 @@
             <span class="input-group-text">{{ $prepend }}</span>
         </div>
     @endif
-    @include("components.form.{$view}")
+    @include("form.{$view}")
     @if ($append ?? null)
         <div class="input-group-append">
             <span class="input-group-text">{{ $append }}</span>
@@ -45,7 +45,7 @@
     @endif
 </div>
 @else
-@include("components.form.{$view}")
+@include("form.{$view}")
 @endif
 
 @error($name)
