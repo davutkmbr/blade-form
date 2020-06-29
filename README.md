@@ -16,21 +16,26 @@ Bu component, kod tekrarını önlemek, okunabilirliği arttırmak ve form eleme
 ```
 
 **@slot('type')**
+
 Kullanılabilir tipler: text, email, password, textarea, file, select
 
 **@slot('name')**
+
 Bu slot, inputun **name=""** değerini tanımlayacaktır. Ayrıca **id=""** değeri de buna göre şekillenir.
 
 **@slot('label') ve @slot('description')**
+
 Input başlığı ve yardımcı açıklamasını tanımlamak için kullanılır.
 
 **@slot('attributes')**
+
 Input'a ekstra olarak eklemek istediğiniz attribute ları buradan tanımlayabilirsiniz.
 
 **@slot('value')**
+
 Buraya yazdığımız değer inputun varsayılan değeri olacaktır. Bu değer değiştirilip form submit edilirse **old()** methodu devreye girecek ve son yazılan değer kalacaktır.
 
-**Ekstra**
+
 Ayrıca bir "validation" hatası varsa hatayı otomatik olarak inputun altına yazacaktır.
 
 # Select
@@ -49,7 +54,7 @@ Select elementini kullanırken ekstradan bir slot daha kullanırız.
 @endcomponent
 ```
 
-Selectimiz multiple ise, birden fazla öğe seçmek için "value" slotuna array girebiliriz.
+Selectimiz multiple ise, birden fazla öğe seçmek için "value" slotuna array değer girebiliriz.
 
 ----
 
